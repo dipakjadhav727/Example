@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<span id="errMsg">
+</span>
+
+	<form name="form" action="OnlineFood" method="post">
+		<table border="1">
+			<tr>
+				<td><select name="menu">
+						<option value="">-select-</option>
+						<option value="non-veg">non veg</option>
+						<option value="veg">veg</option>
+						<option value="chinese">chinese</option>
+						<option value="nort-ind">nort-ind</option>
+						<option value="rajastahne">rajastahne</option>
+						<option value="panjabi">panjabi</option>
+				</select>
+				
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button value="htmlpage" onclick="htmlpage()">HTMLpage</button>
+					<button value="xl" onclick="xlcelfile()">xlcel-file</button>
+				</th>
+			</tr>
+		</table>
+		<input type="hidden" name="source">
+		</form>
+		
+		<script type="text/javascript">
+			function htmlpage() {
+				form.source.value = 'html';
+				validate();
+			}
+			function xlcelfile() {
+				form.source.values = 'xlcel';
+				validate();
+			}
+			function validate() {
+				if (form.menu.selectedIndex == '0') {
+
+					document.getElementById("errMsg").innerHTML = "You must select menu";
+					document.getElementById("errMsg").style = "color:red";
+					return false;
+				}//if
+				else {
+					form.submit();
+					return true;
+				}//eles
+			}//function
+		</script>
+		 
+		
+
+</body>
+</html>

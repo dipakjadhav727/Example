@@ -1,0 +1,26 @@
+SQL> create table Online_Food(hotelid number(10),hotelname varchar2(20),hoteladd varchar2(20),hotelreting number(2,3),menu varchar2(20), perperson number(5));
+
+Table created.
+
+SQL> desc online_food
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ HOTELID                                            NUMBER(10)
+ HOTELNAME                                          VARCHAR2(20)
+ HOTELADD                                           VARCHAR2(20)
+ HOTELRETING                                        NUMBER(2,3)
+ MENU                                               VARCHAR2(20)
+ PERPERSON                                          NUMBER(5)
+
+SQL>
+ HOTELID HOTELNAME            HOTELADD             HOTELRETING          MENU                  PERPERSON
+---------- -------------------- -------------------- -------------------- -------------------- ----------
+       101 RajaHotel            nagar                3*                   non-veg                     250
+       101 Shivmaratha          nagar                3*                   veg                         220
+       101 HotelnewChina        rs nagar             2*                   chinese                     150
+       104 HotelnewChina        rama nagar           4*                   nort-ind                    250
+       105 santhos              ameerpet             1*                   sount-ind                   450
+       105 rajasthani           sri nagar            3*                   rajastahne                  450
+       106 panjabi              sunjaguda            3*                   panjabi                     450
+       107 rajamahal            sri nagar            4*                   rajastahne                  450
+       108 panjabihotel         sunjaguda            3*                   panjabi                     450
